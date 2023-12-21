@@ -1,0 +1,12 @@
+H:\DevOps\Learning\dotnet\Coffee\CoffeeApp\Shared\bin\Debug\net7.0\CoffeeApp.Shared.deps.json
+H:\DevOps\Learning\dotnet\Coffee\CoffeeApp\Shared\bin\Debug\net7.0\CoffeeApp.Shared.dll
+H:\DevOps\Learning\dotnet\Coffee\CoffeeApp\Shared\bin\Debug\net7.0\CoffeeApp.Shared.pdb
+H:\DevOps\Learning\dotnet\Coffee\CoffeeApp\Shared\obj\Debug\net7.0\CoffeeApp.Shared.csproj.AssemblyReference.cache
+H:\DevOps\Learning\dotnet\Coffee\CoffeeApp\Shared\obj\Debug\net7.0\CoffeeApp.Shared.GeneratedMSBuildEditorConfig.editorconfig
+H:\DevOps\Learning\dotnet\Coffee\CoffeeApp\Shared\obj\Debug\net7.0\CoffeeApp.Shared.AssemblyInfoInputs.cache
+H:\DevOps\Learning\dotnet\Coffee\CoffeeApp\Shared\obj\Debug\net7.0\CoffeeApp.Shared.AssemblyInfo.cs
+H:\DevOps\Learning\dotnet\Coffee\CoffeeApp\Shared\obj\Debug\net7.0\CoffeeApp.Shared.csproj.CoreCompileInputs.cache
+H:\DevOps\Learning\dotnet\Coffee\CoffeeApp\Shared\obj\Debug\net7.0\CoffeeApp.Shared.dll
+H:\DevOps\Learning\dotnet\Coffee\CoffeeApp\Shared\obj\Debug\net7.0\refint\CoffeeApp.Shared.dll
+H:\DevOps\Learning\dotnet\Coffee\CoffeeApp\Shared\obj\Debug\net7.0\CoffeeApp.Shared.pdb
+H:\DevOps\Learning\dotnet\Coffee\CoffeeApp\Shared\obj\Debug\net7.0\ref\CoffeeApp.Shared.dll

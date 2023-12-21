@@ -1,0 +1,62 @@
+@page "/coffees"
+@inject HttpClient HttpClient
+@using CoffeeApp.Shared
+
+<div class="row">
+    <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
+        <h3>Coffees</h3>
+        <div class="row">
+            @if(coffees.Any()){
+                @foreach(var item in coffees)
+                {
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-4 mh-25 mb-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">#@item.Id @item.Title</h5>
+                                <p class="card-text">@item.Description.Substring(0, 80) ...</p>
+                                <a href="/coffees" @onclick="() =>GetDetails(item.Id)">Read More...</a>
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+            else{
+                <p>No Coffees available!</p>
+            }
+        </div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+        <h3>Coffee Details</h3>
+        @if(String.IsNullOrEmpty(SelectedCoffee.Title))
+        {
+            <h3>@SelectedCoffee.Title</h3>
+            <p>@SelectedCoffee.Description</p>
+            <p>Ingredients</p>
+            <ul>
+                @foreach(var ingredient in SelectedCoffee.Ingredients)
+                {
+                    <li class="list-group-item">@ingredient</li>
+                }
+            </ul>
+        }
+        else{
+            <p>No Coffee has been selected!</p>
+        }
+    </div>
+</div>
+@code {
+    private List<Coffee> coffees = new();
+    
+    private Coffee SelectedCoffee = new();
+
+        protected override async Task OnInitializedAsync()
+        {
+            coffees = await HttpClient.GetFromJsonAsync<List<Coffee>>("Coffee/List");
+            
+        }
+
+        private async Task GetDetails(int id)
+        {
+            SelectedCoffee = await HttpClient.GetFromJsonAsync<Coffee>($"Coffee/{id}");
+        }
+}
