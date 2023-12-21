@@ -16,8 +16,5 @@ namespace CoffeeApp.Shared
             this.Description = description;
             this.Ingredients = ingredients;
         }
-
     }
 }
-
-

@@ -77,11 +77,11 @@ namespace CoffeeApp.Server.Controllers
         [HttpGet("{id}")]
         public ActionResult Get(int id)
         {
-            var cofee = coffees.Find(o => o.Id == id);
+            var coffee = coffees.Find(o => o.Id == id);
 
-            if(cofee is not null)
+            if(coffee is not null)
             {
-                return Ok(cofee);
+                return Ok(coffee);
             }
             return NotFound("Coffee Not Found");
         }
